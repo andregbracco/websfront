@@ -1,0 +1,89 @@
+
+@font-face{
+    font-family: "Roboto";
+    src: url(../Roboto/Roboto-Light.ttf) format('woff');
+}
+
+.contenido {
+    width: 1000px;
+    font-family: "Roboto";
+    text-align: center;
+    background-color: #E5E5E5;
+    font-weight: bold;
+}
+/*******************cabecera******************/
+.cabecera {
+    background-color: #222222;
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    box-shadow: 0px 3px 5px #464545;
+}
+.menu {
+    display: flex;
+    justify-content: space-around;
+    color: #ffffff;
+}
+h4 {
+    padding: 10px 15px 10px 10px;
+}
+/*******************main******************/
+.flex-conteiner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 50px 20px;
+}
+.card {
+    width: 50%;
+    font-size: 20px;
+    color: #ff0000;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 3px 5px #464545;
+}
+.foto-moto {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.envio {
+    position: absolute;
+    top: 140px;
+    left: 50px;
+}
+span {
+    color: #ffffff;
+}
+.promos {
+    display: flex;
+    justify-content: space-between;
+}
+.lista h3 {
+    color: #000000;
+    text-align: right;
+}
+li {
+    font-size: 15px;
+    text-align: left;
+    line-height: 28px;
+    color: #000000;
+}
+.torre {
+    width: 40%;
+}
+.pie {
+    background-color: #222222;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+}
+.contacto {
+    text-align: left;
+    line-height: 15px;
+    padding-left: 18px;
+}
+.logopie img {
+    width: 290px;
+    padding-top: 15px;
+}
