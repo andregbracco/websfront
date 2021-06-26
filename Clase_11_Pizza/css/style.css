@@ -1,0 +1,102 @@
+
+@font-face{
+    font-family: "Roboto";
+    src: url(../Roboto/Roboto-Bold.ttf) format('woff');
+}
+
+.contenido {
+    font-family: "Roboto", sans-serif;
+    background-color: #E5E5E5;
+    width: 1050px;
+    align-content: center;
+}
+
+/* estilo del header */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #222222;
+}
+
+nav ul li {
+    display: inline;
+    padding: 10px;
+    color: #ffffff;
+}
+
+/****** estilo del main *******/
+
+main {
+    display: flex;
+    flex-direction: row;
+}
+
+/* estilo de la moto */
+
+#moto {
+    position: relative;
+    width: 50%;
+    padding: 15px;
+}
+
+#moto h2 {
+    position: absolute;
+    left: 20px;
+    color: #ff0000;
+}
+
+#moto h2 span {
+    color: #ffffff;
+}
+
+/* estilo del podio */
+
+#titulo {
+    padding: 10px 50px 40px 40px;
+    background-color: #ffffff;
+    width: 50%;
+    padding: 15px;
+    margin: 20px;
+}
+
+#titulo h1 {
+    color: #ff0000;
+    text-align: center;
+}
+
+#top5 {
+    display: flex;
+    flex-direction: column;
+    line-height: 25px;
+}
+
+#podio {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.img {
+    position: absolute;
+    left: 250px;
+    bottom: 20px;
+}
+
+/* estilo del footer */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #222222;
+    color:#ffffff;
+    font-size: 15px;
+    line-height: 25px;
+    position: relative;
+}
+
+footer img {
+    position: absolute;
+    bottom: 30px;
+    left: 820px;
+}
