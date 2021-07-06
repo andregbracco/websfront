@@ -7,18 +7,23 @@
     width: 800px;
     margin: auto;
     text-align: center;
+    font-size: 16px;
 }
+@media (min-width: 460px){
+    /*Tablets*/
+}
+
 /****** header *******/
 h3 {
     background-color: #1CD1B0;
-    font-size: 12px;
+    font-size: 0.7rem;
     text-align: left;
     margin: 0px;
     padding: 10px 15px;
 }
 h1 {
     background-color: #00669F;
-    font-size: 40px;
+    font-size: 2.5rem;
     text-align: left;
     margin: 0px;
     padding: 20px 15px;
@@ -46,7 +51,7 @@ h1 {
 }
 .card p {
     padding: 15px;
-    font-size: 12px;
+    font-size: 0.9rem;
     text-align: left;
 }
 .card i {
@@ -55,7 +60,7 @@ h1 {
     top: 10px;
     text-decoration: none;
     color: #ff0000;
-    font-size: 25px;
+    font-size: 2rem;
 }
 .cara {
     border-radius: 800px;
