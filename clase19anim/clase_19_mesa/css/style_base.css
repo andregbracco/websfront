@@ -120,8 +120,28 @@ nav ul li a:hover::before{
     margin-top: 15px;
     transition: all 350ms;
 }
+
 .container a:hover{
     color:var(--decoration-color);
+    transform: translateX(10px) rotate(10deg) translateY(5px);
+    animation-name: degrade;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+
+}
+
+@keyframes degrade {
+    0%{
+        background-color: black;
+    }
+    50%{
+        background-color: #ffffff;
+        color: black;
+    }
+    100%{
+        background-color: black;
+    }
+    
 }
  
 /* spinner| */
