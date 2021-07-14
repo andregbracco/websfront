@@ -19,28 +19,27 @@
     </div>
     <div class="space-between frontCat ">
         <h2><span>Front</span>Cat&Dog</h2>
+        <i class="fas fa-bars"></i>
         <ul class="opciones m-hide">
             <li>
-                <i class="fas fa-paw"></i><a href="#">Categorías</a>
+                <a href="#">Categorías</a>
             </li>
             <li>
-                <i class="fas fa-paw"></i><a href="#">Pets</a>
+                <a href="#">Pets</a>
             </li>
             <li>
-                <i class="fas fa-paw"></i><a href="#">Nosotros</a>
+                <a href="#">Nosotros</a>
             </li>
             <li>
-                <i class="fas fa-paw"></i><a href="#">Contactanos</a>
+                <a href="#">Contactanos</a>
             </li> 
         </ul>
     </div>
     <!--banner-->
     <div class="banner">
-        <div class="frases">
-            <h3>¡Es un placer tenerte aquí!</h3>
-            <p id="desc">Comederos en descuento</p>
-            <button id="comederos">COMEDEROS</button>
-        </div>
+        <h3>¡Es un placer tenerte aquí!</h3>
+        <p id="desc">Comederos en descuento</p>
+        <button id="comederos">COMEDEROS</button>
     </div>
     <!--Productos Destacados-->
     <div class="centrar">
@@ -56,31 +55,37 @@
         <div class="card">
             <img src="./img/churrasquito.jpeg" width=100% alt="churrasquito">
             <p>Juguete Churrasquito</p>
-            <p>$150</p>
+            <p class="precio">$150</p>
         </div>
         <div class="card">
             <img src="./img/comida.jpeg" width=100% alt="comida">
             <p>Juguete Churrasquito</p>
-            <p>$250</p>
+            <p class="precio">$250</p>
         </div>
         <div class="card">
             <img src="./img/huesito.jpeg" width=100% alt="huesito">
             <p>Juguete Churrasquito</p>
-            <p>$650</p>
+            <p class="precio">$650</p>
         </div>
     </div>
     <!--Contáctanos-->
     <div class="contacto">
         <p>Contáctanos</p>
-        <ul class="datos" type="none">
-            <li>Nombre y Apellido</li>
-            <li>Ingresá tu correo electrónico</li>
-            <li>Teléfono</li>
-        </ul>
+        <form action="#" method="POST">
+            <input type="text" name="nombre" placeholder="Nombre y Apellido">
+            <input type="email" name="mail" placeholder="Ingresá tu correo electrónico">
+            <input type="tel" name="tel" placeholder="Teléfono">
         <div class="botones">
-            <button class="reset">Resetear</button>
-            <button class="enviar">Enviar</button>
+            <input class="reset" value="Resetear">
+            <input class="enviar" value="Enviar">
         </div>
+    </div>
+    <div class="suscripcion">
+        <h3>Suscríbete para más novedades</h3>
+        <form action="#" method="POST">
+            <input id="campo" type="email" name="email" placeholder="Ingresá tu correo electrónico">
+            <input id="susc" type="submit" name="suscrip" value="Suscribirme">
+        </form>
     </div>
 </body>
 </html>

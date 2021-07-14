@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;700&family=Karla&display=swap" rel="stylesheet">
+    <title>Añadir</title>
+</head>
+
+<body>
+    <p class="top">20% de descuento en todos los productos!</p>
+    <header>
+        <div>
+            <img src="./img/logo.jpeg" width="10%" alt="Imagen logo">
+            <h2>Nombre Tienda</h2>
+            <nav class="nav-hamburguesa">
+                <input type="checkbox" id="menu">
+                <label for="menu">☰</label>
+                <ul>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="registro.html">Registrarme</a></li>
+                    <li><a href="ingresar.html">Ingresar</a></li>
+                    <li><a href="index.html">Volver</a></li>
+                </ul>
+            </nav>
+        </div>
+        <nav class="nav-principal">
+            <ul>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="registro.html">Registrarme</a></li>
+                <li><a href="ingresar.html">Ingresar</a></li>
+                <li><a href="index.html">Volver</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="principal-form-nuevo">
+        <div class="container-form-nuevo">
+            <h1>¡Añadí tu súper!</h1>
+            <p>Agregá tu personaje favorito completando las opciones.</p>
+            <form action="">
+                <div class="form-nuevo-grupo">
+                    <div class="form-nuevo-subgrupo">
+                        <label class="is-required subtitulo" for="nombre">Nombre</label>
+                        <br>
+                        <input type="text" id="nombre" required>
+                    </div>
+                    <div class="form-nuevo-subgrupo">
+                        <label class="is-required subtitulo" for="especies">Especie</label>
+                        <br>
+                        <select name="especies" id="especies" required>
+                            <option value="" selected disabled>Especie</option>
+                            <option value="1">Humano</option>
+                            <option value="2">Dios</option>
+                            <option value="3">Marciano</option>
+                            <option value="4">Kryptoniano</option>
+                            <option value="5">Eterno</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-nuevo-grupo">
+                    <div class="form-nuevo-subgrupo">
+                        <label class="subtitulo" for="fecha">Fecha</label>
+                        <br>
+                        <input type="date" id="fecha">
+                    </div>
+                    <div class="form-nuevo-subgrupo">
+                        <label class="subtitulo" for="foto">Agregar Foto</label>
+                        <br>
+                        <input type="file" id="foto">
+                    </div>
+                </div>
+                <div class="form-nuevo-grupo">
+                    <div class="form-nuevo-subgrupo">
+                        <textarea name="descripcion" id="descripcion" placeholder="Descripción"></textarea>
+                    </div>
+                    <div class="form-nuevo-subgrupo">
+                        <label class="subtitulo" for="poderes">Poderes</label>
+                        <br>
+                        <div class="poderes">
+                            <label for="poder1">
+                                <input type="checkbox" id="poder1" name="poder1" value="0"> Volar
+                            </label>
+                            <label for="poder2">
+                                <input type="checkbox" id="poder2" name="poder2" value="1">
+                                Superinteligencia
+                            </label>
+                            <label for="poder3">
+                                <input type="checkbox" id="poder3" name="poder3" value="2">
+                                Vista de rayo láser
+                            </label>
+                            <label for="poder4">
+                                <input type="checkbox" id="poder4" name="poder4" value="3">
+                                Billetera gorda
+                            </label>
+                        </div>
+                        <hr>
+                        <label class="subtitulo" for="tipo">Tipo de personaje</label>
+                        <br>
+                        <div class="tipo">
+                            <input type="radio" name="tipo" id="heroe">
+                            <label for="heroe">Heroinx</label>
+                        </div>
+                        <div class="tipo">
+                            <input type="radio" name="tipo" id="villano">
+                            <label for="villano">Villanx</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-nuevo-grupo form-nuevo-btn">
+                    <input id="boton" type="submit" value="Añadir">
+                </div>
+            </form>
+        </div>
+    </div>
+    </div>
+    <footer>
+        <p>Todos los derechos reservados a FRONT END 1</p>
+    </footer>
+</body>
+
+</html>

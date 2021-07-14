@@ -1,0 +1,31 @@
+
+header {
+    background-color: #00669F;
+    color: #ffffff;
+}
+h3 {
+    background-color: #1CD1B0;
+    padding: 1%;
+}
+.formulario {
+    width: 60%;
+    margin: auto;
+}
+.formulario form {
+    display: flex;
+    flex-direction: column;
+}
+input, select {
+    padding: 2%;
+    margin: 1%;
+}
+.botones {
+    display: flex;
+    justify-content: space-between;
+}
+.botones input {
+    border-radius: 20px;
+}
+.boton {
+    width: 20%
+}

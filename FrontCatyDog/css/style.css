@@ -8,7 +8,6 @@ body {
     background-color: #222222;
     color: #ffffff;
     padding: 0% 9%;
-    align-items: center;
 }
 .space-between span {
     color: #222222;
@@ -23,10 +22,33 @@ ul li {
 .opciones {
     width: 350px;
     text-align: right;
+    display: flex;
 }
+/*.opciones li::before {
+    content: "\f337";
+}*/
+
+.opciones li::before {
+    background-image: url("../img/patita2.png");
+    background-size: 15px 14px;
+    display: inline-block;
+    width: 15px; 
+    height: 14px;
+    content:"";
+}
+ /**   
+.opciones li::before {
+    content: url("../img/patita2.png");
+}
+**/
+
 .frontCat {
     background-color: #F0A83E;
     padding: 0% 5%;
+    padding-right: 0;
+}
+.frontCat i {
+    display: none;
 }
 a, i {
     text-decoration: none;
@@ -34,15 +56,38 @@ a, i {
 }
 /*banner*/
 .banner {
-    background: #222222 url(../img/banner.png) no-repeat scroll;
+    background-image: url(../img/banner.png);
+    background-attachment: fixed;
+    position: relative;
     padding: 15%;
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    align-items: flex-end;
 }
+.banner h3 {
+    background-color: #ffffff;
+    font-size: 2em;
+    padding: 1.5% 0%;
+    border-radius: 5px;
+}
+.banner p {
+    position: relative;
+    right: 15%;
+    margin-top: 0;
+}
+.banner #comederos {
+    background-color: #F0A83E;
+    color: #ffffff;
+    padding: 2%;
+    position: relative;
+    right: 20%;
+    border: 0;
+}
+/*Productos destacados*/
 .centrar {
     text-align: center;
 }
-/*Productos destacados*/
 .cards {
     display:flex;
     justify-content: space-between;
@@ -52,6 +97,10 @@ a, i {
     margin: 5%;
     border: solid 2px #222222;
     text-align: center;
+    font-size: 1.5em;
+}
+.precio {
+    color: #F0A83E;
 }
 .contacto {
     margin:auto;
@@ -61,36 +110,52 @@ a, i {
 }
 .contacto p {
     text-align: center;
+    font-size: 2em;
+    font-weight: bold;
 }
-.datos {
+form {
     display: flex;
     flex-direction: column;
     padding: 0;
-    margin: 0;
+    margin: 0 25%;
 }
-.datos li {
-    padding: 5%;
-    margin: 1%;
+input {
+    margin: 2%;
+    padding: 2%;
     background-color: #3C2313;
-    border-radius: 15px;
+    border-radius: 10px;
+}
+#susc {
     color: #ffffff;
+}
+#campo {
+    background-color: #ffffff;
 }
 .botones {
     display: flex;
-    justify-content: space-around;
-}
-.reset {
+    justify-content: center;
     color: #ffffff;
-    background-color: #8A8787;
-    border-radius: 20px;
-    padding: 3%;
-    width: 25%;
 }
 .enviar {
-    color: #ffffff;
     background-color: #F0A83E;
-    border-radius: 20px;
-    width: 25%;
+    width: 20%;
+    text-align: center;
+    border: 0;
+}
+.reset {
+    background-color: #8A8787;
+    width: 20%;
+    text-align: center;
+    border: 0;
+}
+.suscripcion {
+    display: flex;
+    justify-content: space-between;
+    background-color: #F0A83E;
+    color:#ffffff;
+}
+h3 {
+    flex-grow: 1;
 }
 
 /* MOBILE */
@@ -98,13 +163,38 @@ a, i {
     .m-hide{
         display: none;
     }
+    .frontCat i {
+        display: inline;
+        align-self: center;
+        padding-right: 5%;
+    }
+    .frontCat {
+        position: sticky;
+        top: 5px;
+    }
     .cards {
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
     }
     .card {
-        align-items: stretch;
-        
+        align-items: stretch;font-size: 0.5em;
+    }
+    .banner {
+        background-image: url(../img/banner.png);
+        background-attachment: fixed;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    .banner h3 {
+        font-size: 1.5em;
+    }
+    .suscripcion {
+        display: flex;
+        flex-direction: column;
+        background-color: #F0A83E;
+        color:#ffffff;
     }
 }
