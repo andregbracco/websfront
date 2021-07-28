@@ -1,0 +1,115 @@
+body {
+    background-color: #ffecd9;
+}
+
+.flex-amebas {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+/*conteiner amebas*/
+.conteiner-amebas {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+/*ameba top left*/
+.top-left {
+    width: 30vw;
+    height: 30vh;
+    border-bottom-right-radius: 100%;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    background-color: #fdafab;
+    transition-property: all;
+    transition-duration: 0.8s;
+}
+.top-left:hover{
+    transform: scale(3);
+    background-color: #fadee1;
+    border-bottom-right-radius: 50%;
+}
+/*ameba top right*/
+.top-right {
+    width: 30vw;
+    height: 30vh;
+    border-bottom-left-radius: 100%;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    background-color: #b6e3e9;
+    transition-property: all;
+    transition-duration: 0.8s;
+}
+
+.top-right:hover{
+    transform: scale(3);
+    background-color: #d9f1f1;
+    border-bottom-left-radius: 50%;
+}
+/*conteiner amebas*/
+
+.conteiner-amebas {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+/*ameba bottom left*/
+.bottom-left {
+    width: 30vw;
+    height: 30vh;
+    border-top-right-radius: 100%;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    background-color: #b0f2c2;
+    transition-property: all;
+    transition-duration: 0.8s;
+}
+.bottom-left:hover{
+    transform: scale(3);
+    background-color: #dcf9e4;
+    border-top-right-radius: 50%;
+}
+/*ameba bottom right*/
+.bottom-right {
+    width: 30vw;
+    height: 30vh;
+    border-top-left-radius: 100%;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    background-color: #e9b0f2;
+    transition-property: all;
+    transition-duration: 0.8s;
+}
+.bottom-right:hover{
+    transform: scale(3);
+    background-color: #f5dcf9;
+    border-top-left-radius: 50%;
+}
+
+/*nombre*/
+h1 {
+    align-self: center;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-name: agrandando;
+    animation-duration: 5s;
+}
+@keyframes agrandando {
+    0% {
+        color: #ffecd9;
+    }
+    1% {
+        color: #fdafab;
+    }
+    25% {
+        color: #b6e3e9;
+    }
+    45% {
+        color: #b0f2c2;
+        transform: scale(1.5)
+    }
+    65% {
+        color: #e9b0f2;
+    }
+    75% {
+        color: #ffecd9;
+    }
+}
